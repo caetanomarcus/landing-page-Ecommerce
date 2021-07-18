@@ -4,6 +4,7 @@ export const Container = styled.div `
     background: #000;
     color: white;
     height: 40vh;
+    min-height: 350px;
     width: 100%;
     border-radius: .25rem .25rem 0 0; 
     display: flex;
@@ -16,14 +17,16 @@ export const Container = styled.div `
 export const Title = styled.h2 `
     color: #fff;
     text-transform: uppercase;
+    margin-top: 3rem;
 `
 export const FormContainer = styled.form `
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     jusfity-content: center;
-    height: 40%;
+    height: 40vh;
+   
 `
 export const AltMsg= styled.h3 `
     height: 40%;
@@ -68,6 +71,7 @@ export const Btn = styled.button `
     font-size: 1.2rem;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
+    
 
     &:hover{
         cursor: pointer;
@@ -82,4 +86,28 @@ export const Btn = styled.button `
     &:active{
         transform: scale(0.99);
     }
+`
+
+export const LastContainer = styled.div `
+    display: flex;
+    align-items: flex-end;
+    height: 19%;
+    margin-bottom: 3rem;
+`
+
+export const LastMsg = styled.p `
+    
+`
+export const Figures = styled.figure `
+display: flex;
+width: 8rem;
+justify-content: space-evenly;
+margin-bottom: 2rem;
+
+`
+
+export const Contact = styled.img `
+    width: 40px;
+    
+    
 `

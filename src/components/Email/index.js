@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import * as S from './styled'
+import github from '../../assets/github.png'
+import linkedin from '../../assets/linkedin.png'
 
 export default function Email (){
     const [send, setSend] = useState(false);
@@ -24,7 +26,8 @@ export default function Email (){
 
     const handleClick = (e)=> {
         e.preventDefault();
-        let _data = {name: user, email: email}
+        if(user && email){
+            let _data = {name: user, email: email}
         localStorage.setItem('userData', JSON.stringify(_data));
         setSend(true);
 
@@ -32,7 +35,9 @@ export default function Email (){
 
         const regex = user.substring(0, user.indexOf(' '))
 
-        setTimeout(()=> {setMsg(`Pronto, ${regex}, agora é só aproveitar as promoções que iremos enviar por email!`)}, 2500)
+        setTimeout(()=> {setMsg(`Pronto, ${regex || user}, agora é só aproveitar as promoções que iremos enviar por email!`)}, 2500)
+        }
+        
         
         
         
@@ -55,6 +60,13 @@ export default function Email (){
            <S.Btn onClick={handleClick} >Quero Receber</S.Btn>
            </S.FormContainer>
            }
+           <S.LastContainer>
+               <S.LastMsg>Criado por Marcus Caetano</S.LastMsg>
+           </S.LastContainer>
+           <S.Figures>
+           <a href='https://github.com/caetanomarcus'target='_blank' rel='noreferrer' ><S.Contact src={github}/></a>
+           <a href='https://www.linkedin.com/in/marcus-caetano-8827a4208/' target='_blank' rel='noreferrer' ><S.Contact src={linkedin}/></a>
+           </S.Figures>
         </S.Container>
     )
 }

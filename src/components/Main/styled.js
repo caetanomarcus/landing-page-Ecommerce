@@ -57,6 +57,7 @@ export const GamesContainer = styled.div `
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 3rem;
 `
 
 export const Game = styled.div `
@@ -75,15 +76,25 @@ export const Game = styled.div `
         cursor: pointer;
         
     }
+
+    &:hover p:last-child{
+        font-size: 1.5rem;
+        background: #fc8c14;
+        border-radius: 4px;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+
+    
 `
 
 export const Cover = styled.img `
     width: 100%;
     height: 88%;
 
-    &:hover {
-        transform: scale(1.1);
-    }
+    
  `
 
 export const Name = styled.p `
@@ -94,6 +105,7 @@ export const Name = styled.p `
  export const OldPrince = styled.p `
     text-decoration: line-through;
     font-size: .9rem;
+    
  `
 
  export const Price = styled.p `

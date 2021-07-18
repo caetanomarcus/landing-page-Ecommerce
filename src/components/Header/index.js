@@ -14,10 +14,10 @@ export default function Header(){
                 <S.Title>MarcGames</S.Title>
                 <S.Label>
                     <S.Searcher placeholder="O que você busca?"  />
-                    <S.HeaderIMG src={lupa} largura='30px' />
+                    <S.HeaderIMG src={lupa} largura='30px' cel='20px' />
                 </S.Label>
                 <S.LoginContainer>
-                    <S.HeaderIMG src={login} alt='Entrar' largura='40px' />
+                    <S.HeaderIMG src={login} alt='Entrar' largura='40px'  />
                     <S.TitleParagraph>Entrar</S.TitleParagraph>
                 </S.LoginContainer>
             </S.SecondContainer>

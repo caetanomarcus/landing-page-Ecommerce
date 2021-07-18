@@ -11,6 +11,8 @@ export const Container = styled.div `
     position: fixed;
     top:0;
     width: 100%;
+    z-index: 10;
+   
     
 `
 export const SecondContainer = styled.div `
@@ -68,7 +70,7 @@ export const Searcher = styled.input `
     }
 
     @media(max-width: 414px){
-        
+        font-size: 1rem;
     }
 `
 
@@ -83,6 +85,11 @@ export const LoginContainer = styled.div `
 export const HeaderIMG = styled.img `
     width: ${props => props.largura};
     cursor: pointer;
+    margin-right: 1rem;
+
+    @media(max-width: 414px){
+        width: ${props => props.cel}
+    }
     
 `
 
