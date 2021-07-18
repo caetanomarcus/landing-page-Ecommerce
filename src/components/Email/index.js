@@ -46,11 +46,11 @@ export default function Email (){
            <S.FormContainer required>
            <S.Label>
                <S.Text>Nome:</S.Text> 
-               <S.Input required='true' name='name' type='text'onChange={handleUser}  value={user} ></S.Input>
+               <S.Input required='true' name='name' onChange={handleUser}  value={user} ></S.Input>
            </S.Label>
            <S.Label>
                <S.Text>Email:</S.Text> 
-             <S.Input required='true' name='email' type='email' onChange={handleMail}  value={email}></S.Input>
+             <S.Input required='true' name='email'  onChange={handleMail}  value={email}></S.Input>
            </S.Label>
            <S.Btn onClick={handleClick} >Quero Receber</S.Btn>
            </S.FormContainer>
