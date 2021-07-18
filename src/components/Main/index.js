@@ -4,7 +4,7 @@ import Games from './Games.js'
 
 
 export default function Main (){
-    const [games, useGames] = useState(Games)
+    const [games] = useState(Games)
 
     return (
        <>

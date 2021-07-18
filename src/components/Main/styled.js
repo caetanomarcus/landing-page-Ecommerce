@@ -95,7 +95,7 @@ export const Name = styled.p `
     font-size: .9rem;
  `
 
- export const Price = styled. p `
+ export const Price = styled.p `
     margin: .5rem;
     text-shadow: 0 0 3px #fc8c14;
  `

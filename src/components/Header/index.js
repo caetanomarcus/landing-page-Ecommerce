@@ -6,7 +6,7 @@ import lupa from '../../assets/loupe.png'
 
 
 export default function Header(){
-    const [menu, setMenu] = useState(['Home', 'Jogos Novos', 'Jogos Velhos', 'Sobre'])
+    const [menu] = useState(['Home', 'Jogos Novos', 'Jogos Velhos', 'Sobre'])
 
     return(
         <S.Container>
