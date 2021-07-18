@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div `
     background: #000;
     color: white;
-    height: 40vh;
+    height: 45vh;
     min-height: 350px;
     width: 100%;
     border-radius: .25rem .25rem 0 0; 
@@ -25,7 +25,7 @@ export const FormContainer = styled.form `
     flex-direction: column;
     align-items: center;
     jusfity-content: center;
-    height: 40vh;
+    height: 70%;
    
 `
 export const AltMsg= styled.h3 `
@@ -91,18 +91,21 @@ export const Btn = styled.button `
 export const LastContainer = styled.div `
     display: flex;
     align-items: flex-end;
-    height: 19%;
-    margin-bottom: 3rem;
+    height: 5%;
+    margin: .8rem 0;
+    
 `
 
 export const LastMsg = styled.p `
-    
+    margin-top: 1rem;
 `
 export const Figures = styled.figure `
 display: flex;
 width: 8rem;
 justify-content: space-evenly;
-margin-bottom: 2rem;
+margin-top: .2rem;
+margin-bottom: .3rem;
+
 
 `
 
