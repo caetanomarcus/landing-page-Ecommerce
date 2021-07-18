@@ -8,6 +8,9 @@ export const Container = styled.div `
     height: 20vh;
     min-height: 150px;
     background-color: #000;
+    position: fixed;
+    top:0;
+    width: 100%;
     
 `
 export const SecondContainer = styled.div `
@@ -18,6 +21,7 @@ export const SecondContainer = styled.div `
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 
     @media(max-width: 414px){
         flex-direction: column;
