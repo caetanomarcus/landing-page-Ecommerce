@@ -11,7 +11,7 @@ export default function Header(){
     return(
         <S.Container>
             <S.SecondContainer>
-                <S.Title>PsxGames</S.Title>
+                <S.Title>MarcGames</S.Title>
                 <S.Label>
                     <S.Searcher placeholder="O que você busca?"  />
                     <S.HeaderIMG src={lupa} largura='30px' />
